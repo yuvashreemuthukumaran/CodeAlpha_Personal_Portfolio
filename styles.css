@@ -1,0 +1,222 @@
+/* Font Import from google and font awesome */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'); 
+ 
+
+/* Global Styles */
+body {
+    background-image: url('techy.jpg');
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    color: #fff;
+}
+
+/* Sticky Navigation Bar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #18b06c;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('techy.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: parallax 10s infinite linear;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #18b06c;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Animation for Parallax Background */
+@keyframes parallax {
+    0% { background-position: center top; }
+    100% { background-position: center bottom; }
+}
+
+/* Section Styling */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    background: #121212;
+    border-top: 2px solid #505f48;
+    transition: all 0.3s ease;
+}
+
+.section:nth-child(even) {
+    background: #1e1e1e;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #18b06c;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.section h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(90deg, #03dac6, #6200ea);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
+}
+
+.section h2:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+/* Skills Section */
+.skills-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.skills-list div {
+    width: 30%;
+}
+
+.skills-list .hover-effect {
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hard-skills {
+    background-color: #2c3e50;
+}
+
+.soft-skills {
+    background-color: #34495e;
+}
+
+.tools {
+    background-color: #3b4d63;
+}
+
+.skills-list div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Section */
+.projects-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.project-item {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-item:hover {
+    background-color: #34495e;
+    transform: translateY(-5px);
+}
+
+.project-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.project-item p {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.project-item a {
+    color: #18b06c;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.project-item a:hover {
+    color: #03dac6;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #121212;
+    border-top: 2px solid #414b4a;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.9;
+}
