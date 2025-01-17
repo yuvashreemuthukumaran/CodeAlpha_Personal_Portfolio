@@ -1,7 +1,6 @@
-/* Font Import from google and font awesome */
+/* Font Import from Google and Font Awesome */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'); 
- 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
 /* Global Styles */
 body {
@@ -220,3 +219,70 @@ footer p {
     margin: 0;
     font-size: 1.9;
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul li {
+        margin: 10px 0;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .hero p {
+        font-size: 1.2rem;
+    }
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-list div {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .projects-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .section h2 {
+        font-size: 2rem;
+    }
+    .skills-list div {
+        width: 90%;
+    }
+    .project-item {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header nav ul li a {
+        font-size: 0.9rem;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 0.9rem;
+    }
+    .section h2 {
+        font-size: 1.8rem;
+    }
+}
+
